@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.C.E.S | Premium Electrical Services Leeds</title>
+    <meta name="description"
+        content="A.C.E.S provides top-tier electrical installation and maintenance services in Leeds, Sheffield, and surrounding areas. 5-star rated experts.">
+
+    <!-- Fonts -->
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@400,500,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Locomotive / Lenis Smooth Scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader-content">
+            <i class="ph ph-lightning"></i>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo" data-cursor="hover">
+                <i class="ph ph-lightning text-accent"></i>
+                <span class="logo-text">A.C.E.S</span>
+            </a>
+            <div class="nav-links">
+                <a href="#services" data-cursor="hover">Services</a>
+                <a href="#about" data-cursor="hover">About</a>
+                <a href="#reviews" data-cursor="hover">Reviews</a>
+            </div>
+            <a href="#contact" class="btn btn-outline" data-cursor="hover">
+                <span>Get a Quote</span>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero-split">
+                <div class="hero-content">
+                    <div class="hero-badge" data-cursor="hover">
+                        <span class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                class="ph-fill ph-star"></i></span>
+                        <span>5.0 (33 Reviews)</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <div class="line"><span class="word">Precision.</span></div>
+                        <div class="line"><span class="word">Power.</span></div>
+                        <div class="line"><span class="word"><span class="text-accent">Performance.</span></span></div>
+                    </h1>
+                    <p class="hero-subtitle">Premium electrical installation and maintenance shaping the future of
+                        residential and commercial spaces across Leeds & Sheffield.</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary" data-cursor="hover">
+                            <span>Book Service</span> <i class="ph ph-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="map-wrapper">
+                        <iframe
+                            src="https://maps.google.com/maps?q=Shed%2011,%20The%20Bunker,%202%20Murray%20Rd,%20Sheffield%20S11%207GH&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-prompt">
+                <div class="mouse-icon"></div>
+                <span>Scroll to explore</span>
+            </div>
+        </section>
+
+        <!-- Marquee Strip -->
+        <div class="marquee-strip">
+            <div class="marquee-content">
+                <span>COMMERCIAL FIT-OUTS</span>
+                <i class="ph ph-lightning text-accent"></i>
+                <span>SMART AUTOMATION</span>
+                <i class="ph ph-lightning text-accent"></i>
+                <span>INDUSTRIAL MAINTENANCE</span>
+                <i class="ph ph-lightning text-accent"></i>
+                <span>FULL REWIRES</span>
+                <i class="ph ph-lightning text-accent"></i>
+                <span>COMMERCIAL FIT-OUTS</span>
+                <i class="ph ph-lightning text-accent"></i>
+                <span>SMART AUTOMATION</span>
+                <i class="ph ph-lightning text-accent"></i>
+                <span>INDUSTRIAL MAINTENANCE</span>
+                <i class="ph ph-lightning text-accent"></i>
+                <span>FULL REWIRES</span>
+                <i class="ph ph-lightning text-accent"></i>
+            </div>
+        </div>
+
+        <!-- Services Interactive List -->
+        <section class="services" id="services">
+            <div class="services-images">
+                <div class="img-wrap active" id="img-0">
+                    <img src="images/residential.png" alt="Residential">
+                </div>
+                <div class="img-wrap" id="img-1">
+                    <img src="images/commercial.png" alt="Commercial">
+                </div>
+                <div class="img-wrap" id="img-2">
+                    <img src="images/hero.png" alt="Industrial">
+                </div>
+            </div>
+            <div class="container services-container">
+                <div class="services-header section-titling">
+                    <h2 class="section-title">Our <span class="text-accent">Expertise</span>.</h2>
+                    <p class="section-desc">State-of-the-art electrical solutions engineered for modern demands,
+                        balancing safety with striking aesthetics.</p>
+                </div>
+
+                <div class="services-list">
+                    <div class="service-item" data-id="0" data-cursor="hover">
+                        <div class="service-meta">
+                            <span class="service-num">01</span>
+                            <i class="ph ph-house"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>Domestic Installations</h3>
+                            <p>From full house rewires to bespoke smart home automation, delivering modern electrical
+                                safety and luxury to your home.</p>
+                        </div>
+                        <div class="service-arrow"><i class="ph ph-arrow-right"></i></div>
+                    </div>
+                    <div class="service-item" data-id="1" data-cursor="hover">
+                        <div class="service-meta">
+                            <span class="service-num">02</span>
+                            <i class="ph ph-buildings"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>Commercial Fit-outs</h3>
+                            <p>High-end architectural lighting, data cabling, and comprehensive power systems designed
+                                for workspaces and retail environments.</p>
+                        </div>
+                        <div class="service-arrow"><i class="ph ph-arrow-right"></i></div>
+                    </div>
+                    <div class="service-item" data-id="2" data-cursor="hover">
+                        <div class="service-meta">
+                            <span class="service-num">03</span>
+                            <i class="ph ph-factory"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>Industrial Infrastructure</h3>
+                            <p>Heavy-duty electrical frameworks, 3-phase power solutions, and preventive maintenance for
+                                warehouses and factories.</p>
+                        </div>
+                        <div class="service-arrow"><i class="ph ph-arrow-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Reviews Section -->
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <div class="section-titling">
+                    <h2 class="section-title">Client <span class="text-accent">Testimonials</span>.</h2>
+                </div>
+                <div class="reviews-grid">
+                    <div class="review-card reveal-elem">
+                        <i class="ph-fill ph-quotes text-accent quote-icon"></i>
+                        <p class="review-text" style="font-size: 1.15rem;">"Had a great experience with this electrician
+                            when they replaced our consumer unit. They were punctual, professional, and explained
+                            everything clearly before starting the work. The job was completed efficiently and to a very
+                            high standard, with no mess left behind. All safety checks were carried out and
+                            certification was provided promptly. Friendly, reliable, and knowledgeable &mdash; I
+                            wouldn&rsquo;t hesitate to recommend them to anyone needing electrical work done."</p>
+                        <div class="reviewer-info">
+                            <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                    class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                    class="ph-fill ph-star"></i></div>
+                            <h4>Zaib Wemyss</h4>
+                            <span>2 months ago</span>
+                        </div>
+                    </div>
+                    <div class="review-card reveal-elem">
+                        <i class="ph-fill ph-quotes text-accent quote-icon"></i>
+                        <p class="review-text" style="font-size: 1.15rem;">"ACES did an amazing job installing the
+                            lighting and plug sockets in my cabin. They were so lovely throughout the whole process and
+                            kept me constantly updated, clearly communicating everything they were doing. I would highly
+                            recommend them. Thank you so much to this company for making my vision come true &#129303;"
+                        </p>
+                        <div class="reviewer-info">
+                            <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                    class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                    class="ph-fill ph-star"></i></div>
+                            <h4>Alayna Ali</h4>
+                            <span>2 months ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-content reveal-elem">
+                        <h2>Let's build something <span class="text-accent">powerful</span> together.</h2>
+                        <p>Whether you need a simple fix or a complete commercial fit-out, our experts are ready to
+                            deliver safety, compliance, and premium results.</p>
+
+                        <div class="contact-details">
+                            <a href="tel:+447984095543" class="contact-item" data-cursor="hover">
+                                <div class="icon"><i class="ph ph-phone"></i></div>
+                                <div>
+                                    <span>Call us</span>
+                                    <strong>+44 7984 095543</strong>
+                                </div>
+                            </a>
+                            <div class="contact-item">
+                                <div class="icon"><i class="ph ph-map-pin"></i></div>
+                                <div>
+                                    <span>Address</span>
+                                    <strong
+                                        style="font-size: 0.9rem; line-height: 1.4; display: block; margin-top: 4px;">Shed
+                                        11, Unit, The Bunker, 2 Murray Rd,<br>Sheffield S11 7GH, UK</strong>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon"><i class="ph ph-clock"></i></div>
+                                <div>
+                                    <span>Business Hours</span>
+                                    <strong
+                                        style="font-size: 0.9rem; line-height: 1.4; display: block; margin-top: 4px;">Mon
+                                        - Fri: 09:00 - 17:00<br>Sat - Sun: Closed</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrap reveal-elem">
+                        <form class="contact-form"
+                            onsubmit="event.preventDefault(); alert('Inquiry sent successfully!');">
+                            <div class="form-row">
+                                <div class="input-wrap">
+                                    <input type="text" id="name" required placeholder=" ">
+                                    <label for="name">Your Name</label>
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="tel" id="phone" required placeholder=" ">
+                                    <label for="phone">Phone Number</label>
+                                </div>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="email" id="email" required placeholder=" ">
+                                <label for="email">Email Address</label>
+                            </div>
+                            <div class="input-wrap">
+                                <textarea id="message" rows="4" required placeholder=" "></textarea>
+                                <label for="message">Tell us about your project</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-full" data-cursor="hover">
+                                <span>Submit Request</span> <i class="ph ph-paper-plane-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <i class="ph ph-lightning text-accent"></i>
+                        A.C.E.S
+                    </a>
+                    <p>Advanced Commercial & Electrical Services.<br>Setting the gold standard in modern electrical
+                        engineering and installations across the UK.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#home" data-cursor="hover">Home</a></li>
+                        <li><a href="#services" data-cursor="hover">Services</a></li>
+                        <li><a href="#reviews" data-cursor="hover">Reviews</a></li>
+                        <li><a href="#contact" data-cursor="hover">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#" data-cursor="hover">LinkedIn</a></li>
+                        <li><a href="#" data-cursor="hover">Instagram</a></li>
+                        <li><a href="#" data-cursor="hover">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 A.C.E.S. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#" data-cursor="hover">Privacy Policy</a>
+                    <a href="#" data-cursor="hover">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
